@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    h2>Form 1</h2>
+    <input type="text" placeholder="nome" id="nome">
+    <br><br>
+    <button onclick="resultado()">Enviar</button>
+<br><br><br>
+<h1>Form 2</h1>
+<input type="text" placeholder="nome" id="nome_2">
+<br><br>
+<input type="number" placeholder="idade" id="idade">
+<br><br>
+<button onclick="resultado_2()">Enviar</button>
+
+<script>
+// Exercicio 1
+function resultado(){
+    const nome = document.getElementById('nome').value;
+    alert('Bem Vindo ao Sistema ' + nome);
+
+}
+// Exercicio 2
+
+function resultado_2(){
+      const nome = document.getElementById('nome_2').value;
+      const num = document.getElementById('idade').value;
+      alert(nome + 'você tem ' + num + ' Anos');
+
+}
+// Exercicio 3
+
+pop_brasil = prompt('Digite a População do Brasil: ');
+pop_china = prompt('Digitea a Populção da China:');
+
+if(pop_brasil > pop_china){
+    alert('População Brasileira é maior');
+}else{
+    alert('População Chinesa é maior');
+
+}
+
+// Exercico 4
+
+num = prompt('Digite um numero: ');
+if(num % 2 == 0){
+    alert("Par");
+}
+else{
+    alert('Impar');
+
+}
+// Exercicio 5
+sal = prompt("informe seu salario: ");
+desc = prompt("Informe o desconto:")
+sal_liqui = sal - (sal/100 * desc);
+alert("Salario após desconto: " + sal_liqui);
+
+// Exercicio 6
+
+temp = promp('Dgite a Temperatura: ');
+conv = ((temp * 9/5)+32);
+alert("Após a Conversão temperatura igual a: " + conv);
+
+</script>
+
+</body>
+</html>
