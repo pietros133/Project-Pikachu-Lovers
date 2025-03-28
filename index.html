@@ -68,6 +68,80 @@ temp = promp('Dgite a Temperatura: ');
 conv = ((temp * 9/5)+32);
 alert("Após a Conversão temperatura igual a: " + conv);
 
+// Exercico 7 
+
+// Perguntando ao usuário os valores
+let valor1 = parseFloat(prompt("Digite o primeiro número: "));
+let valor2 = parseFloat(prompt("Digite o segundo número: "));
+let valor3 = parseFloat(prompt("Digite o terceiro número: "));
+
+// Verificando qual é o maior valor
+let maior;
+
+if (valor1 >= valor2 && valor1 >= valor3) {
+    maior = valor1;
+} else if (valor2 >= valor1 && valor2 >= valor3) {
+    maior = valor2;
+} else {
+    maior = valor3;
+}
+
+// Exibindo o maior valor
+alert("O maior número é: " + maior);
+
+
+// Exercicio 8
+
+const idade = parseInt(prompt('Informe sua idade:'));
+const data = 2025 - idade;
+alert("Seu ano de Nascimento e idade é " + data);
+
+// Exercicio 9 
+
+// Perguntando ao usuário o peso e altura
+let peso = parseFloat(prompt("Digite seu peso (em kg): "));
+let altura = parseFloat(prompt("Digite sua altura (em metros): "));
+
+// Calculando o IMC
+let imc = peso / (altura * altura);
+
+// Determinando a situação com base no IMC
+let situacao;
+if (imc < 16.9) {
+    situacao = "Muito abaixo do peso";
+} else if (imc >= 17 && imc <= 18.9) {
+    situacao = "Abaixo do peso";
+} else if (imc >= 19 && imc <= 26.9) {
+    situacao = "Peso normal";
+} else if (imc >= 27 && imc <= 31.9) {
+    situacao = "Acima do peso";
+} else {
+    situacao = "Obesidade";
+}
+
+// Exibindo o IMC e a situação
+alert("Seu IMC é: " + imc.toFixed(2) + "\nSituação: " + situacao);
+
+// Exercico 10
+
+nota1 = parseFloat(prompt("Digite a nota:"));
+nota3 = parseFloat(prompt("Digite a nota:"));
+nota4 = parseFloat(prompt("Digite a nota:"));
+nota5= parseFloat(prompt("Digite a nota:"));
+media = (nota1 + nota3 + nota4 + nota5 / 4);
+if( media > 7){
+    alert('aprovado');
+}
+else if(media >= 5 && media <=6.9){
+    alert("Recuperação")
+}
+else{
+    alert("Reprovado");
+    
+}
+
+
+
 </script>
 
 </body>
